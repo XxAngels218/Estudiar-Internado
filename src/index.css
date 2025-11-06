@@ -6,6 +6,17 @@
   body {
     @apply bg-gray-50 text-gray-900;
   }
+  
+  /* Mejorar soporte táctil en móviles */
+  * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    -webkit-touch-callout: none;
+  }
+  
+  /* Asegurar que el scroll funcione bien en iOS */
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 @layer components {
